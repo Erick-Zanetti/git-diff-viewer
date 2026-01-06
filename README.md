@@ -40,27 +40,27 @@ npm start
 
 ## Deployment
 
-### Deploy Automático no Vercel
+### Automatic Deployment on Vercel
 
-Para habilitar deploy automático a cada push:
+To enable automatic deployment on every push:
 
-1. **Acesse o Vercel Dashboard:**
-   - Vá para [vercel.com](https://vercel.com) e faça login
+1. **Access Vercel Dashboard:**
+   - Go to [vercel.com](https://vercel.com) and log in
 
-2. **Importe o Projeto:**
-   - Clique em **"Add New..."** → **"Project"**
-   - Selecione o repositório `git-diff-viewer` do GitHub
-   - Clique em **"Import"**
+2. **Import Project:**
+   - Click **"Add New..."** → **"Project"**
+   - Select the `git-diff-viewer` repository from GitHub
+   - Click **"Import"**
 
-3. **Configure (automático):**
-   - O Vercel detecta Next.js automaticamente
-   - Não precisa alterar nada, apenas clique em **"Deploy"**
+3. **Configure (automatic):**
+   - Vercel automatically detects Next.js
+   - No need to change anything, just click **"Deploy"**
 
-4. **Pronto!**
-   - Após o primeiro deploy, todos os pushes na branch `main` farão deploy automático
-   - Você pode ver os deploys em: Vercel Dashboard → Deployments
+4. **Done!**
+   - After the first deploy, all pushes to the `main` branch will trigger automatic deployments
+   - You can view deployments at: Vercel Dashboard → Deployments
 
-### Deploy Manual (CLI)
+### Manual Deployment (CLI)
 
 ```bash
 npm i -g vercel
