@@ -40,17 +40,32 @@ npm start
 
 ## Deployment
 
-This project is ready to deploy on Vercel:
+### Deploy Automático no Vercel
 
-1. Push your code to a Git repository (GitHub, GitLab, or Bitbucket)
-2. Import the project in [Vercel](https://vercel.com)
-3. Vercel will automatically detect Next.js and configure the build settings
+Para habilitar deploy automático a cada push:
 
-Or use Vercel CLI:
+1. **Acesse o Vercel Dashboard:**
+   - Vá para [vercel.com](https://vercel.com) e faça login
+
+2. **Importe o Projeto:**
+   - Clique em **"Add New..."** → **"Project"**
+   - Selecione o repositório `git-diff-viewer` do GitHub
+   - Clique em **"Import"**
+
+3. **Configure (automático):**
+   - O Vercel detecta Next.js automaticamente
+   - Não precisa alterar nada, apenas clique em **"Deploy"**
+
+4. **Pronto!**
+   - Após o primeiro deploy, todos os pushes na branch `main` farão deploy automático
+   - Você pode ver os deploys em: Vercel Dashboard → Deployments
+
+### Deploy Manual (CLI)
 
 ```bash
 npm i -g vercel
-vercel
+vercel login
+vercel --prod
 ```
 
 ## Usage
