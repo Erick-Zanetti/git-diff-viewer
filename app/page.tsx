@@ -53,8 +53,8 @@ export default function Home() {
           </p>
         </header>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
-          <div className="order-2 lg:order-1">
+        <div className="space-y-6 mb-8">
+          <div className="w-full">
             <DiffInput value={diffText} onChange={setDiffText} />
             {parseError && (
               <div className="mt-4 p-4 bg-red-50 dark:bg-red-950/20 border border-red-200 dark:border-red-800 rounded-lg">
@@ -62,7 +62,7 @@ export default function Home() {
               </div>
             )}
           </div>
-          <div className="order-1 lg:order-2 lg:sticky lg:top-8 lg:h-[calc(100vh-4rem)] lg:overflow-y-auto">
+          <div className="w-full">
             <div className="bg-white dark:bg-gray-900 rounded-lg border border-gray-200 dark:border-gray-800 p-4">
               {parsedFiles.length > 0 && (
                 <div className="mb-4 pb-4 border-b border-gray-200 dark:border-gray-800">
